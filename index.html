@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Afterlight Catacombs by Tavern Tale Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
+<link href="slides/slides.css" rel="stylesheet">
+<style>
+html { box-sizing:border-box; font-family: "Oswald", sans-serif, system-ui; font-optical-sizing: auto; font-weight: 400; font-style: normal; }
+body { background-color: #091113; margin: 0; padding: 0;}
+div { display:inline-block; height: fit-content; vertical-align: middle;}
+div.title { 
+    background-color: #b6fff2c0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    padding:0;
+    width:40%;
+    height:100%;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+.title div { padding:4rem; }
+div.info {
+    width:60%;
+    height:100%;
+    padding: 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info a { padding: 1.6rem; background-color: #473c55; text-decoration: none; color:#000;}
+.info a:hover { background-color: #b6fff2;}
+.info div { color:#473c55; font-size: 1.6rem; width: auto; }
+h1 { font-size: 4em; font-weight: 900; margin: 0; padding:0; text-align: center;
+    color: #b6fff2c0; text-shadow: 0.03em 0.03em 0.06em #b6fff245;}
+h2 { font-size: 2.5em; letter-spacing: 1rem; color:#473c55; margin:0;padding:0;}
+h3 { font-size: 1.6em; text-align: center;}
+p { font-size: 1.5rem;}
+section { 
+    padding: 1em;
+    margin: 0; text-align: center; display: flex; align-items: center; width:auto; align-content: space-evenly;}
+section.header {
+    background: #b6fff2; color: #000;
+    box-shadow: 0 0.5em 0.5em #b6fff245;
+    border: 0px; 
+    padding-left: 1em; padding-right: 1em; padding-top: 0.4em; padding-bottom: 0.4em;
+    display: flex; flex-wrap: wrap; gap: 1em 0; top: 0;  vertical-align: middle; z-index: 2; position: sticky;
+}
+section.title { 
+    background-image: url("./images/snuffer_large.webp");
+    background-position: center;
+    background-color: #151719;
+    background-size: cover;
+    height:100dvh;
+    padding: 0;
+    margin: 0;
+}
+section.alternate { background-color: #473c5540; height:100dvh; margin: 0;padding: 0  ;}
+section.footer { background:#000; color:  #191C19; padding-top: 1.6em; display:block; }
+
+a.header { text-decoration: none; font-size: 0.6em; margin-top: auto; margin-bottom: auto; }
+a.header:hover { color: white }
+.flex-1 { flex: 1 0 auto; display: flex; max-width: 100%; font-size: 1.6em; font-weight: 600; }
+.navright { border: 0px; margin: auto; }
+.footer { text-decoration: none;}
+.featured { padding-left: 2em; padding-right: 2em; }
+
+div.footer { display: block; margin-left: auto; margin-right: auto; margin-top: 0; padding:0; }
+
+.social { max-width: 3em; max-height: 3em; display: inline-block; margin: 1em; padding: 0; position: relative;}
+a.footer { color:#191C19; text-decoration: none;}
+#lixfooter { height: 10rem;  padding: 0; margin: 0 2rem; }
+#ttfooter { height: 6rem;  padding: 0; margin: 0 2rem; }
+div.logos { flex-flow: row nowrap;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    align-items: center;
+    margin:2rem 0;
+}
+
+.featured-container { 
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    border: 2px solid red;
+    box-sizing:border-box;
+    margin: 2em auto; padding: 0; 
+    gap: 0 2.5em;
+    padding: 2.5em 0;
+    margin: 0;
+    width:100%;
+}
+.featured-inner {
+    max-width: 70vh;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    border: 2px solid green;
+}
+.featured-inner p { padding: 0.6em 1em; margin: 0; border: 2px solid cyan;}
+.featured-inner h1 { line-height: 80%; margin-bottom:0.36em;}
+.featured-inner img { 
+    padding: 0; margin: 0;
+    border-radius: 1.6em; border:0.6em solid #F2FAF2; box-shadow: 0.6em 0.6em 1em #7D58A3;
+}
+.featured-title { color: #F2FAF2; text-decoration: none; margin: 0; padding: 0; }
+.featured-image-spacer { padding: 0; margin: 0 0 0; border: 3px solid purple;}
+.playnow {
+    background-color: #7D58A3; color:#F2FAF2;
+    height: fit-content; text-align: center; width: fit-content;
+    margin: 4em; padding: 1em;
+}
+.playnow:hover { background-color: #F2FAF2;color:#7D58A3; }
+.hr-cloud {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    border: 4px solid darkorange;
+    margin: 0 auto;
+}
+
+section.moregames { background-color: #473C55; color:#F2FAF2; display: flex;
+flex-flow: column nowrap; }
+
+
+div.moregames { width:100%; display:block; margin:auto 0;clear: both; text-transform: uppercase;}
+a.crosspromote { color:#000; text-decoration: none; }
+a.crosspromote:hover { color:white}
+</style>
+</head>
+
+<body>
+<!-- ----------- ------------ Header row ----------- ------------ -->
+<section class="header">
+    <div class="flex-1">
+        AFTERLIGHT CATACOMBS &nbsp;
+            <a class="header" href="https://taverntalestudio.com"><img style="height:2em;" src="images/tavern_logo.png.webp"></a>&nbsp;&nbsp;
+            <a class="header" href="https://lixeirapublishing.com"><img style="height:2em;" src="images/lixeira_inline.svg"></a>
+    </div>
+    <div class="navright">
+        <a href="https://store.steampowered.com/app/3203130/"><img src="images/steam_playnow.svg" style="height: 2em;"/>
+        </a>
+    </div>
+</section>
+<div style="min-height:1.6em;">&nbsp;</div>
+
+<!-- ----------- ------------ Featured Title ----------- ------------ -->
+<section class="title" style="display: flex; flex-flow: column nowrap; align-items: center;">
+    <div style="width:100%;position:relative;margin:auto 0;">&nbsp;</div>
+    <div style="width:100%;position:relative;margin:auto 0;">
+        <h2>COMING OCTOBER 24, 2024</h2>
+        <h1>AFTERLIGHT CATACOMBS</h1>
+    </div>
+</section>
+
+<!-- ----------- ------------  Coming Soon  ----------- ------------ -->
+<section class="alternate">
+    <div class="title">
+        <div>
+            Wishlist Now
+        </div>
+    </div>
+    <div class="info">
+        <div>
+            Experience fear and excitement in this tense, first-person horror game while exploring an abandoned tomb filled with warnings, ill omens, traps and blood. Venture further into the unknown while being stalked by a nightmarish creature. Beware!
+        </div>
+        <div>
+            <a href="https://store.steampowered.com/app/3203130/">Wishlist On Steam</a>
+        </div>
+        <div>
+            <a href="http://www.youtube.com/@LixeiraPublishing">Watch the latest trailer</a>
+        </div>
+    </div>
+</section>
+<section style="height:4rem;"><div>&nbsp;</div></section>
+
+<!-- ----------- ------------ More about the game ----------- ------------ -->
+<section class="alternate">
+    <div class="info">
+        <div>
+            <p>Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+            
+            <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+        </div>
+    </div>
+
+    <div class="title">
+        <div style="padding:4rem;">
+            More about the game
+        </div>
+    </div>
+</section>
+<section style="height:4rem;"><div>&nbsp;</div></section>
+
+<!-- ----------- ------------ About the devs ----------- ------------ -->
+<section class="alternate">
+    <div class="title">
+        <div style="padding:4rem;">
+            About the Devs
+        </div>
+    </div>
+    <div class="info">
+        <div>
+            <p>
+                Tavern Tale Studio is an indie game studio focused on digital games and RPG content.
+            </p>
+            <p>
+                Their motto is to provide unforgettable stories for our players, whether they are made by us or by your shared experiences, without any genre restriction.
+            </p>
+        </div>
+        <div>
+            <a href="https://taverntalestudio.com">Read more</a>
+        </div>
+    </div>
+</section>
+<section style="height:4rem;"><div>&nbsp;</div></section>
+
+
+
+<!-- ----------- ------------ Slider for more games ----------- ------------ -->
+<h1>Screenshots</h1>
+<section class="slider-wrapper">
+    <button class="slide-arrow" id="slide-arrow-prev">
+        &#8249;
+    </button>
+    <button class="slide-arrow" id="slide-arrow-next">
+        &#8250;
+    </button>
+    <ul class="slides-container" id="slides-container">
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+        <li class="slide"><a href="https://store.steampowered.com/app/3203130/"><img src="slides/screenshot_01.webp" /></a></li>
+    </ul>
+</section>
+
+<!-- ----------- ------------ Static links to more games ----------- ------------ -->
+<section class="moregames">
+    <div class="moregames" style="font-size: 4rem; font-weight: 900; color: #000;">
+        Check out More Games!
+    </div>
+    <div class="moregames" style="color:#191C19;">
+        <p>
+            <a href="https://afterlightcatacombs.com" class="crosspromote">Afterlight Catacombs</a> &nbsp;&#9671;&nbsp;
+            <a href="https://cursedletters.com" class="crosspromote">Cursed Letters</a> &nbsp;&#9671;&nbsp;
+            <a href="https://cupidseries.com" class="crosspromote">Cupid Games</a> &nbsp;&#9671;&nbsp;
+            <a href="https://inyfgame.com" class="crosspromote">ITS NOT YOUR FAULT</a> &nbsp;&#9671;&nbsp;
+            <a href="https://nonogramhalloween.com" class="crosspromote">Nonogram Halloween</a> &nbsp;&#9671;&nbsp;
+            <a href="https://piscisxmachina.com" class="crosspromote">PISCIS x MACHINA 4.44 You (are) Fish</a> &nbsp;&#9671;&nbsp;
+            <a href="https://squirrellifeconquest.com" class="crosspromote">Squirrel Life Conquest</a> &nbsp;&#9671;&nbsp;
+            <a href="https://strikewavefighter.com" class="crosspromote">Strikewave: Nightly Underground Fighter</a>
+        </p>
+    </div>
+</section>
+
+<!-- ----------- ------------ Footer ----------- ------------ -->
+<section class="footer">
+    <div class="logos">
+        <a href="https://lixeirapublishing.com"><img id="lixfooter" src="images/lixeira_footer.svg" alt="Lixeira Publishing"/></a>
+        <a href="https://taverntalestudio.com"><img id="ttfooter" src="images/tavern_logo.png.webp" alt="Tavern Tale Studio"/></a>
+    </div>
+    <div class="footer">
+        
+        <a class="footer" href="https://www.instagram.com/lixeirapublishing">
+        <img class="social" src="images/social_metal_instagram.svg" alt="instagram"/>
+        </a>&nbsp;&nbsp;
+
+        <a class="footer" href="https://discord.gg/n5pVaygm">
+        <img class="social" src="images/social_metal_discord.svg" alt="discord"/>
+        </a>&nbsp;&nbsp;
+
+        <a class="footer" href="http://www.youtube.com/@LixeiraPublishing">
+        <img class="social" src="images/social_metal_youtube.svg" alt="youtube"/>
+        </a>&nbsp;&nbsp;
+
+        <a class="footer" href="https://www.tiktok.com/@lixeirapublishing">
+        <img class="social" src="images/social_metal_tiktok.svg" alt="tiktok"/>
+        </a>&nbsp;&nbsp;
+
+        <a class="footer" href="https://bsky.app/profile/lixeirapublishing.bsky.social">
+        <img class="social" src="images/social_metal_bluesky.svg" alt="bluesky"/></a>
+
+    </div>
+    <div class="footer" style="padding-bottom: 1em;">    
+            &copy; <a class="footer" href="https://taverntalestudio.com">Tavern Tale Studio</a> and <a class="footer" href="https://lixeirapublishing.com">Lixeira Publishing</a>. All rights reserved.
+    </div>
+</section>
+
+<!-- ----------- ------------ Slider script ----------- ------------ -->
+<script type="text/javascript" src="slides/slides.js"></script>
+</body>
+</html>
